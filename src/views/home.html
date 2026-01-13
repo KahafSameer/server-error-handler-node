@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevOps Practice App - Home</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+      }
+      .container {
+        background: white;
+        border-radius: 20px;
+        padding: 40px;
+        max-width: 600px;
+        width: 100%;
+        box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      }
+      h1 {
+        color: #333;
+        margin-bottom: 10px;
+        font-size: 2.5em;
+      }
+      .subtitle {
+        color: #666;
+        margin-bottom: 30px;
+        font-size: 1.1em;
+      }
+      .nav-links {
+        display: grid;
+        gap: 15px;
+        margin-top: 30px;
+      }
+      .nav-link {
+        display: block;
+        padding: 15px 25px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        text-decoration: none;
+        border-radius: 10px;
+        transition: transform 0.2s, box-shadow 0.2s;
+        font-weight: 600;
+      }
+      .nav-link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+      }
+      .api-link {
+        background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+      }
+      .health-link {
+        background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      }
+      .info-box {
+        background: #f8f9fa;
+        border-left: 4px solid #667eea;
+        padding: 15px;
+        margin-top: 30px;
+        border-radius: 5px;
+      }
+      .info-box h3 {
+        color: #667eea;
+        margin-bottom: 10px;
+      }
+      .info-box p {
+        color: #666;
+        line-height: 1.6;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🚀 DevOps Practice App</h1>
+      <p class="subtitle">
+        A beginner-friendly application for learning debugging and monitoring
+      </p>
+
+      <div class="nav-links">
+        <a href="/login" class="nav-link">🔐 Login Page</a>
+        <a href="/dashboard" class="nav-link">📊 Dashboard (Protected)</a>
+        <a href="/api/data" class="nav-link api-link">📡 API Data Endpoint</a>
+        <a href="/health" class="nav-link health-link">💚 Health Check</a>
+      </div>
+
+      <div class="info-box">
+        <h3>About This App</h3>
+        <p>
+          This application is designed for DevOps practice. You can
+          intentionally introduce errors, monitor logs, test error handling, and
+          practice debugging in a safe environment.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
